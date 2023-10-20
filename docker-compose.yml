@@ -1,0 +1,11 @@
+services:
+  fuxa:
+    image: frangoteam/fuxa:latest
+    ports:
+      - "1882:1882"
+    volumes:
+      - ./var/lib/uc-aom/volumes-public/fuxa/appdata:/usr/src/app/FUXA/server/_appdata
+      - ./var/lib/uc-aom/volumes-public/fuxa/db:/usr/src/app/FUXA/server/_db
+      - ./var/lib/uc-aom/volumes-public/fuxa/logs:/usr/src/app/FUXA/server/_logs
+      - ./var/lib/uc-aom/volumes-public/fuxa/images:/usr/src/app/FUXA/server/_images
+      
